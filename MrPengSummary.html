@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>面试宝典</title>
+	<style>
+		#vue_ctlg>a,#js_ctlg>a,#css_ctlg>a,#html_ctlg>a{text-decoration:none;}
+		.title{color:red;font-size:25px;}
+		.sum{color:green;font-size:18px;}
+		.detail{color:blue;font-size:18px;}
+		.back{color:orange;font-size:30px;margin:0 auto;}
+		.second{color:orange;font-size:18px;}
+		a:hover{color:red;}
+	</style>
+ </head>
+ <body>
+	<div id="main">
+		<a href="#important">重点背记题</a> | 
+		<a href="#html">HTML面试题</a> |
+		<a href="#css">CSS面试题</a> |
+		<a href="#js">JS面试题</a> |
+		<a href="#catalogue">Vue面试题</a>|
+	</div>
+	
+	<h3 id="important">------重点背记题目录------ <a href="#main">首页</a></h3>
+	<div id="html_ctlg">
+		<a href="#ip1">1.	CORS的原理</a></br>
+		<a href="#ip2">2.	JSONP的原理</a></br>
+	</div>
+	
+	<a id="ip1"></a>
+		<p class="title">1.	CORS的原理</p>
+		<p class="sum">答：CORS学名叫作“服务器端允许跨域”，是Cross Origin Resource Share的简写，译为“跨源头的资源共享”，做法是服务器端拆开res.send为res.writeHead,res.write,res.end三句话，在res.writeHead中写“Access-Control-Allow-Origin”属性，属性值就是允许可访问的源头，可以设置允许单个URL访问，也可以设置所有源头都可访问，用“*”表示所有。（源头：发起请求的地址）<br/>
+res.writeHead(200,{<br/>
+	“Access-Control-Allow-Origin”:”http://xxxx:端口”|”*”<br/>
+});<br/>
+res.write(JSON.stringify(result));<br/>
+res.end();
+</p>
+	<a href="#important" class="back">返回</a>
+
+	<a id="ip2"></a>
+		<p class="title">2.	JSONP的原理</p>
+		<p class="sum">答：JSONP是用来解决跨域获取数据的一种解决方案，我们常用的ajax发送请求获取数据的方式是不能跨域的，所以借助没有跨域限制的&lt;script&gt;标签来实现，在src中写服务端地址，这样就可以得到服务端返回的数据，但是这里不能写死了，更优化的做法是通过查询字符串把获取数据的函数名传递到服务端，服务端返回带有该函数名的js语句，客户端触发事件动态添加script元素，为了解决添加的script不断累积的问题，每请求完一次，都调用remove()方法删除本次使用的&lt;script&gt;，这就是JSONP的原理。（跨域：不同域名的网站间请求数据）
+</p>
+	<a href="#important" class="back">返回</a>
+	<h3 id="html">------HTML目录------ <a href="#main">首页</a></h3>
+	<div id="html_ctlg">
+		<a href="#html1">1.	Doctype作用，HTML5 为什么只需要写&lt;!DOCTYPE HTML&gt;</a></br>
+		<a href="#html2">2.	行内元素有哪些，块级元素有哪些，空(void)元素有那些</a></br>
+		<a href="#html3">3.	简述一下你对HTML语义化的理解</a></br>
+		<a href="#html4">4.	常见的浏览器内核有哪些，介绍一下你对浏览器内核的理解</a></br>
+		<a href="#html5">5.	html5有哪些新特性</a></br>
+		<a href="#html6">6.	描述一下 cookies，sessionStorage 和 localStorage 的区别</a></br>
+		<a href="#html7">7.	如何实现浏览器内多个标签页之间的通信</a></br>
+		<a href="#html8">8.	src与href的区别</a></br>
+		<a href="#html9">9.	表单提交中Get和Post方式的区别</a></br>
+	</div>
+
+	<a id="html1"></a>
+		<p class="title">1.	Doctype作用，HTML5 为什么只需要写&lt;!DOCTYPE HTML&gt;</p>
+		<img src="./image/h1.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html2"></a>
+		<p class="title">2.	行内元素有哪些，块级元素有哪些，空(void)元素有那些</p>
+		<img src="./image/h2.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html3"></a>
+		<p class="title">3.	简述一下你对HTML语义化的理解</p>
+		<img src="./image/h3.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html4"></a>
+		<p class="title">4.	常见的浏览器内核有哪些，介绍一下你对浏览器内核的理解</p>
+		<img src="./image/h4.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html5"></a>
+		<p class="title">5.	html5有哪些新特性</p>
+		<img src="./image/h5.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html6"></a>
+		<p class="title">6.	描述一下 cookies，sessionStorage 和 localStorage 的区别</p>
+		<img src="./image/h6.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html7"></a>
+		<p class="title">7.	如何实现浏览器内多个标签页之间的通信</p>
+		<img src="./image/h7.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html8"></a>
+		<p class="title">8.	src与href的区别</p>
+		<img src="./image/h8.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<a id="html9"></a>
+		<p class="title">9.	表单提交中Get和Post方式的区别</p>
+		<img src="./image/h9.png"><br/>
+	<a href="#html" class="back">返回</a>
+
+	<!--HTML和CSS分割线-->
+	<h3 id="css">------CSS目录------ <a href="#main">首页</a></h3>
+	<div id="css_ctlg">
+		<a href="#css1">1.	css盒子模型，box-sizing属性的理解</a></br>
+		<a href="#css2">2.	清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法</a></br>
+		<a href="#css3">3.	如何让一个不定宽高的盒子水平垂直居中</a></br>
+		<a href="#css4">4.	px和em和rem的区别</a></br>
+		<a href="#css5">5.	position的值有哪些</a></br>
+		<a href="#css6">6.	display:none与visibility：hidden的区别</a></br>
+		<a href="#css7">7.	CSS中link 和@import的区别</a></br>
+		<a href="#css8">8.	什么是响应式设计，响应式设计的基本原理是什么</a></br>
+		<a href="#css9">9.	为什么要初始化CSS样式</a></br>
+		<a href="#css10">10.	CSS3有哪些新特性</a></br>
+		<a href="#css11">11.	::before 和 :after中双冒号和单冒号有什么区别？解释一下这2个伪元素的作用</a></br>
+		<a href="#css12">12.	CSS优化、提高性能的方法有哪些</a></br>
+	</div>
+	
+	<a id="css1"></a>
+		<p class="title">1.	css盒子模型，box-sizing属性的理解</p>
+		<img src="./image/c1.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css2"></a>
+		<p class="title">2.	清除浮动，什么时候需要清除浮动，清除浮动都有哪些方法</p>
+		<img src="./image/c2.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css3"></a>
+		<p class="title">3.	如何让一个不定宽高的盒子水平垂直居中</p>
+		<img src="./image/c3.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css4"></a>
+		<p class="title">4.	px和em和rem的区别</p>
+		<img src="./image/c4.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css5"></a>
+		<p class="title">5.	position的值有哪些</p>
+		<img src="./image/c5.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css6"></a>
+		<p class="title">6.	display:none与visibility：hidden的区别</p>
+		<img src="./image/c6.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css7"></a>
+		<p class="title">7.	CSS中link 和@import的区别</p>
+		<img src="./image/c7.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css8"></a>
+		<p class="title">8.	什么是响应式设计，响应式设计的基本原理是什么</p>
+		<img src="./image/c8.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css9"></a>
+		<p class="title">9.	为什么要初始化CSS样式</p>
+		<img src="./image/c9.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css10"></a>
+		<p class="title">10.	CSS3有哪些新特性</p>
+		<img src="./image/10c.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css11"></a>
+		<p class="title">11.	::before 和 :after中双冒号和单冒号有什么区别？解释一下这2个伪元素的作用</p>
+		<img src="./image/c11.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<a id="css12"></a>
+		<p class="title">12.	CSS优化、提高性能的方法有哪些</p>
+		<img src="./image/c12.png"><br/>
+	<a href="#css" class="back">返回</a>
+
+	<!--CSS和JS分割线-->
+	<h3 id="js">------JS目录------ <a href="#main">首页</a></h3>
+	<div id="js_ctlg">
+		<a href="#js1">1.	JavaScript 有哪些数据类型</a></br>
+		<a href="#js2">2.	怎么判断不同的JS数据类型？</a></br>
+		<a href="#js3">3.	undefined 和 null 有什么区别？</a></br>
+		<a href="#js4">4.	数组对象有哪些常用方法？</a></br>
+		<a href="#js5">5.	Js 有哪几种创建对象的方式？</a></br>
+		<a href="#js6">6.	怎么实现对对象的拷贝(浅拷贝与深拷贝)？</a></br>
+		<a href="#js7">7.	什么是闭包，为什么要用它？</a></br>
+		<a href="#js8">8.	介绍一下 JavaScript 原型，原型链，它们有何特点？</a></br>
+		<a href="#js9">9.	JavaScript 如何实现继承？</a></br>
+		<a href="#js10">10.	new 操作符具体干了什么？</a></br>
+		<a href="#js11">11.	同步和异步的区别，怎么异步加载 JavaScript？</a></br>
+		<a href="#js12">12.	跨域问题的产生，怎么解决它？</a></br>
+		<a href="#js13">13.	对 this 的理解？</a></br>
+		<a href="#js14">14.	apply()、call()和 bind() 是做什么的，它们有什么区别？</a></br>
+		<a href="#js15">15.	什么是内存泄漏，哪些操作会造成内存泄漏？</a></br>
+		<a href="#js16">16.	什么是事件代理，它的原理是什么？</a></br>
+		<a href="#js17">17.	对AMD和CMD的理解，它们有什么区别？</a></br>
+		<a href="#js18">18.	对ES6的了解？</a></br>
+		<a href="#js19">19.	箭头函数有什么特点？</a></br>
+		<a href="#js20">20.	Promise 对象的了解？</a></br>
+		<a href="#js21">21.	async 函数以及 awit 命令？</a></br>
+		<a href="#js22">22.	export 与 export default有什么区别？</a></br>
+		<a href="#js23">23.	前端性能优化？</a></br>
+		<a href="#js24">24.	对JS引擎执行机制的理解？</a></br>
+	</div>
+
+	<a id="js1"></a>
+		<p class="title">1.	JavaScript 有哪些数据类型</p>
+		<img src="./image/30.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js2"></a>
+		<p class="title">2.	怎么判断不同的JS数据类型？</p>
+		<img src="./image/31.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js3"></a>
+		<p class="title">3.	undefined 和 null 有什么区别？</p>
+		<img src="./image/32.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js4"></a>
+		<p class="title">4.	数组对象有哪些常用方法？</p>
+		<img src="./image/33.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js5"></a>
+		<p class="title">5.	Js 有哪几种创建对象的方式？</p>
+		<img src="./image/34.png"><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;<img src="./image/35.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js6"></a>
+		<p class="title">6.	怎么实现对对象的拷贝(浅拷贝与深拷贝)？</p>
+		<img src="./image/36.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js7"></a>
+		<p class="title">7.	什么是闭包，为什么要用它？</p>
+		<img src="./image/37.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js8"></a>
+		<p class="title">8.	介绍一下 JavaScript 原型，原型链，它们有何特点？</p>
+		<img src="./image/38.png"><br/>
+		<img src="./image/39.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js9"></a>
+		<p class="title">9.	JavaScript 如何实现继承？</p>
+		<img src="./image/40.png"><br/>
+		<img src="./image/41.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js10"></a>
+		<p class="title">10.	new 操作符具体干了什么？</p>
+		<img src="./image/42.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js11"></a>
+		<p class="title">11.	同步和异步的区别，怎么异步加载 JavaScript？</p>
+		<img src="./image/43.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js12"></a>
+		<p class="title">12.	跨域问题的产生，怎么解决它？</p>
+		<img src="./image/44.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js13"></a>
+		<p class="title">13.	对 this 的理解？</p>
+		<img src="./image/45.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js14"></a>
+		<p class="title">14.	apply()、call()和 bind() 是做什么的，它们有什么区别？</p>
+		<img src="./image/46.png"><br/>
+		<img src="./image/47.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js15"></a>
+		<p class="title">15.	什么是内存泄漏，哪些操作会造成内存泄漏？</p>
+		<img src="./image/48.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js16"></a>
+		<p class="title">16.	什么是事件代理，它的原理是什么？</p>
+		<img src="./image/49.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js17"></a>
+		<p class="title">17.	对AMD和CMD的理解，它们有什么区别？</p>
+		<img src="./image/50.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js18"></a>
+		<p class="title">18.	对ES6的了解？</p>
+		<img src="./image/51.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js19"></a>
+		<p class="title">19.	箭头函数有什么特点？</p>
+		<img src="./image/52.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js20"></a>
+		<p class="title">20.	Promise 对象的了解？</p>
+		<img src="./image/53.png"><br/>
+		<img src="./image/54.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js21"></a>
+		<p class="title">21.	async 函数以及 awit 命令？</p>
+		<img src="./image/55.png"><br/>
+		<img src="./image/56.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js22"></a>
+		<p class="title">22.	export 与 export default有什么区别？</p>
+		<img src="./image/57.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js23"></a>
+		<p class="title">23.	前端性能优化？</p>
+		<img src="./image/58.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<a id="js24"></a>
+		<p class="title">24.	对JS引擎执行机制的理解？</p>
+		<img src="./image/59.png"><br/>
+	<a href="#js" class="back">返回</a>
+
+	<!--*****************JS和Vue分隔线********************-->
+	<h3 id="catalogue">------Vue目录------ <a href="#main">首页</a></h3>
+	<div id="vue_ctlg">
+		<a href="#1">1.	对MVVM的理解？</a></br>
+		<a href="#2">2.	Vue的生命周期？</a></br>
+		<a href="#3">3.	Vue实现双向绑定的原理？</a></br>
+		<a href="#4">4.	Vue组件间的参数传递？</a></br>
+		<a href="#5">5.	Vue的路由实现？</a></br>
+		<a href="#6">6.	Vue与angular和react的区别？</a></br>
+		<a href="#7">7.	Vue路由的钩子函数？</a></br>
+		<a href="#8">8.	Vuex是什么？怎么使用？哪种功能场景使用它？</a></br>
+		<a href="#9">9.	css只在当前组件起作用？</a></br>
+		<a href="#10">10.	V-if和v-show区别？</a></br>
+		<a href="#11">11.	$route和$router的区别？</a></br>
+		<a href="#12">12.	解释单向数据流和双向数据绑定？</a></br>
+		<a href="#13">13.	Vue如何去除URL中的#？</a></br>
+		<a href="#14">14.	对MVC的理解？</a></br>
+		<a href="#15">15.	vue-router路由实现？</a></br>
+		<a href="#16">16.	NextTick是做什么的？</a></br>
+		<a href="#17">17.	Vue组件data为什么必须是函数？</a></br>
+		<a href="#18">18.	计算属性computed和事件methods有什么区别？</a></br>
+		<a href="#19">19.	对比jQuery,Vue有什么不同？</a></br>
+		<a href="#20">20.	Vue中怎么自定义指令？</a></br>
+		<a href="#21">21.	Vue中怎么自定义过滤器？</a></br>
+		<a href="#22">22.	对keep-alive的了解？</a></br>
+		<a href="#23">23.	Vue中key的作用？</a></br>
+		<a href="#24">24.	Vue的核心是什么？</a></br>
+		<a href="#25">25.	单页面应用的优缺点？</a></br>
+		<a href="#26">26.	vue-router 使用params与query传参有什么区别？</a></br>
+		<a href="#27">27.	Vue有哪些指令？</a></br>
+		<a href="#28">28.	简述Vue的响应式原理？</a></br>
+		<a href="#29">29.	Vue中如何在组件内部实现一个双向数据绑定？</a></br>
+		<a href="#30">30.	Vue中如何监控某个属性值的变化？</a></br>
+		<a href="#31">31.	Vue中给data中的对象属性添加一个新的属性时会发生什么，如何解决？</a></br>
+		<a href="#32">32.	delete和Vue.delete删除数组的区别？</a></br>
+		<a href="#33">33.	如何优化SPA应用的首屏加载速度慢的问题？</a></br>
+		<a href="#34">34.	网页从输入网站到渲染完成经历了哪些过程？</a></br>
+		<a href="#35">35.	jQuery获取的dom对象和原生的dom对象有何区别？</a></br>
+		<a href="#36">36.	jQuery如何扩展自定义方法？</a></br>
+	</div>
+
+  <a id="1"></a>
+		<p class="title">1. 对MVVM的理解？</p>
+		<p class="sum">MVVM是Model-View-ViewModel的缩写，Model代表数据模型，View代表UI组件，ViewModel是一个同步Model和View的对象，通过双向数据绑定把View层和Model层连接了起来，而View和Model之间的同步工作完全是自动的，依靠ViewModel监听模型数据的改变和控制视图行为，处理用户交互</p>
+		<img src="./image/1.png">
+		<p class="detail">答：MVVM是Model-View-ViewModel的缩写，Model代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；View代表UI组件，它负责将数据模型转化成UI展现出来；ViewModel监听模型数据的改变和控制视图行为、处理用户交互，简单理解就是一个同步View和Model的对象，连接Model和View。在MVVM架构下，View和Model之间并没有直接的联系，而是通过ViewModel进行交互，Model和ViewModel之间的交互是双向的，因此View数据的变化会同步到Model中，而Model数据的变化也会立即反应到View上。ViewModel通过双向数据绑定把View层和Model层连接了起来，而View和Model之间的同步工作完全是自动的，无需人为干涉，因此开发者只需要关注业务逻辑，不需要手动操作DOM，不需要关注数据状态的同步问题，复杂的数据状态维护完全由MVVM来统一管理。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="2"></a>
+		<p class="title">2. Vue的生命周期</p>
+		<p class="sum">Vue实例从创建到销毁的过程，就是vue的生命周期，View的生命周期有八个钩子函数：beforeCreate/created/beforeMount/mounted/beforeUpdate/updated/beforeDestroy/destroyed，它表示从开始创建，初始化数据，编译模板，挂载Dom-渲染，更新-渲染，销毁等一系列过程，vue生命周期的作用是通过钩子函数让我们在控制整个Vue实例的过程时更容易形成好的逻辑</p>
+		<p class="detail">答：<br/>
+			(1)beforeCreate（创建前），在实例创建之前执行，数据未加载状态；<br/>
+			(2)created(创建后)：在实例创建、数据加载后；能初始化数据，DOM渲染之前执行；<br/>
+			(3)beforeMount（载入前），虚拟 DOM 已创建完成，在数据渲染前最后一次更改数据；<br/>
+			(4)mounted（载入后），页面、数据渲染完成，真实 DOM 挂载完成；<br/>
+			(5)BeforeUpdate（更新前），重新渲染之前触发；<br/>
+			(6)Updated（更新后），数据已经更改完成，DOM 也重新 render 完成，更改数据会陷入死循环；<br/>
+			(7)beforeDestroy（销毁前），在实例销毁之前调用，实例仍然完全可用。<br/>
+			(8)Destroyed（销毁后），在实例销毁之后调用。调用后，所有的事件监听器会被移除，所有的子实例也会被销毁。该钩子在服务器端渲染期间不被调用。<br/>
+			<font class="second">2.1  什么是vue的生命周期？</font><br/>
+			答：Vue实例从创建到销毁的过程，就是生命周期。从开始创建，初始化数据，编译模板，挂载Dom->渲染，更新->渲染，销毁等一系列过程，称之为vue的生命周期。<br/>
+			<font class="second">2.2  Vue生命周期的作用是什么？</font><br/>
+			答：它的生命周期中有多个事件钩子，让我们在控制整个vue实例的过程时更容易形成好的逻辑。<br/>
+			<font class="second">2.3  Vue生命周期总冠有几个阶段？</font><br/>
+			答：它可以总共分为8个阶段：创建前后，载入前后，更新前后，销毁前后。<br/>
+			<font class="second">2.4  第一次页面加载会触发那几个钩子？</font><br/>
+			答：会触发beforeCreate,created,beforeMount,mounted。<br/>
+			<font class="second">2.5  DOM渲染在哪个周期中就已经完成？</font><br/>
+			答：DOM渲染在mounted中就已经完成了。<br/>
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="3"></a>
+		<p class="title">3. Vue实现双向绑定的原理</p>
+		<p class="sum">vue实现数据双向绑定主要是：采用数据劫持结合”发布者-订阅者”模式的方式，通过Object.defineProperty()来劫持各个属性的setter,getter，在数据变动时发布消息给订阅者，触发响应监听回调</p>
+		<p class="detail">答：采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter,getter，在数据变动时发布消息给订阅者，触发响应监听回调。当把一个普通JavaScript对象创个Vue实例来作为它的data选项时，Vue将遍历它的属性，用Object.defineProperty()将它们转为getter/setter。用户看不到getter/setter，但是在内部它们让Vue追踪依赖，在属性被访问和修改时通知变化。
+		Vue的数据双向绑定将MVVM作为数据绑定的入口，整合Observer,Compile和Watcher三者，通过Observer来监听自己的model的数据变化，通过Compile来解析编译模板指令(vue中是用来解析{{}})，最终利用watcher搭起observer和Compile之间的通信桥梁，达到数据变化->视图更新;视图交互变化(input)->数据model变更双向绑定效果。
+		</p>
+		<img src="./image/2.png"></img>
+		<p class="second">3.1  什么是双向绑定？</p>
+		<p class="sum">双向绑定是希望既能将内存中模型数据的修改更新到视图中，又能将视图中的更改反向更新回内存中的模型数据。</p>
+	<a href="#catalogue" class="back">返回</a>
+	
+	<a id="4"></a>
+		<p class="title">4. Vue组件间的参数传递</p>
+		<p class="detail">答：<br/>
+		(1)父子组件间传值：<br/>
+		&nbsp;&nbsp;①父组件传给子组件：子组件通过props属性，绑定父组件数据实现;<br/>
+		&nbsp;&nbsp;②子组件传给父组件：将父组件的事件在子组件通过$emit方法传递参数触发。<br/>
+		(2)非父子组件间，兄弟组件间传值：<br/>
+		&nbsp;&nbsp;eventBus，就是创建一个事件中心，相当于中转站，可以用它来传递事件和接受事件。项目比较小时，用这个比较合适（另外也可以用VUEX来实现）
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="5"></a>
+		<p class="title">5. Vue的路由实现？</p>
+		<p class="detail">答：<br/>
+		通过hash模式和history模式<br/>
+		Hash模式：在浏览器中符号”#”,#以及#后面的字符称为hash，用window.location.hash读取，特点：hash虽然在URL中，但不被包括在HTTP请求中，用来指导浏览器动作，对服务端安全无用，hash不会重加载页面。<br/>
+		History模式：history采用HTML5的新特性；且提供了两个新方法：pushState(),replaceState()可以对浏览器历史记录栈进行修改，以及popState事件的监听到状态变更。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="6"></a>
+		<p class="title">6.	Vue与angular和react的区别</p>
+		<p class="detail">答：<br/>
+		1、与AngularJS的区别<br/>
+		相同点：都支持指令：内置指令和自定义指令；都支持过滤器：内置过滤器和自定义过滤器；都支持双向数据绑定；都不支持低端浏览器。<br/>
+		不同点：AngularJS的学习成本高，比如增加了Dependency Injection特性，而Vue.js本身提供的API都比较简单、直观；在性能上，AngularJS依赖对数据做脏检查，所以Watcher越多越慢；Vue.js使用基于依赖追踪的观察并且使用异步队列更新，所有的数据都是独立触发的。<br/>
+		2、与React的区别<br/>
+		相同点：React采用特殊的JSX语法，Vue.js在组件开发中也推崇编写.vue特殊文件格式，对文件内容都有一些约定，两者都需要编译后使用；中心思想相同：一切都是组件，组件实例之间可以嵌套；都提供合理的钩子函数，可以让开发者定制化地去处理需求；都不内置列数AJAX，Route等功能到核心包，而是以插件的方式加载；在组件开发中都支持mixins的特性。<br/>
+		不同点：React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="7"></a>
+		<p class="title">7.	Vue路由的钩子函数？</p>
+		<p class="detail">答：<br/>
+		首页可以控制导航跳转，beforeEach,afterEach等，一般用于页面title的修改，一些需要登录才能调整页面的重定向功能。<br/>
+		beforeEach 主要有3个参数 to,from,next<br/>
+		to:route即将进入得目标路由对象<br/>
+		from:route当前导航正要离开的路由<br/>
+		next:function一定要调用该方法resolve这个钩子。执行效果依赖next方法的调用参数，可以控制网页的跳转。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+	
+	<a id="8"></a>
+		<p class="title">8.	Vuex是什么？怎么使用？哪种功能场景使用它？</p>
+		<p class="detail">答：<br/>
+		只用来读取的状态集中放在store中； 改变状态的方式是提交mutations，这是个同步的事物； 异步逻辑应该封装在action中。<br/>
+		在main.js引入store，注入。新建了一个目录store，… export 。<br/>
+		场景有：单页应用中，组件之间的状态、音乐播放、登录状态、加入购物车
+		</p>
+		<img src="image/3.png"/>
+		<p  class="detail">state：Vuex 使用单一状态树,即每个应用将仅仅包含一个store 实例，但单一状态树和模块化并不冲突。存放的数据状态，不可以直接修改里面的数据。<br/>
+		mutations：mutations定义的方法动态修改Vuex 的 store 中的状态或数据。<br/>
+		getters：类似vue的计算属性，主要用来过滤一些数据。<br/>
+		action：actions可以理解为通过将mutations里面处里数据的方法变成可异步的处理数据的方法，简单的说就是异步操作数据。view 层通过 store.dispath 来分发 action。
+		</p>
+		<img src="image/4.png"/>
+		<p  class="detail">
+		modules：项目特别复杂的时候，可以让每一个模块拥有自己的state、mutation、action、getters，使得结构非常清晰，方便管理。
+		</p>
+		<img src="image/5.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="9"></a>
+		<p class="title">9.	怎么让css只在当前组件起作用？</p>
+		<p class="detail">答：<br/>
+		在style标签中写入scoped即可，例如&lt;stylescoped&gt;&lt;/style&gt;
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+	
+	<a id="10"></a>
+		<p class="title">10.	V-if和v-show区别？</p>
+		<p class="detail">答：<br/>
+		v-if按照条件是否渲染，如果值为false,页面将不会有这个标签生成，<br/>v-show是不管值是true还是false,标签都会存在，原理是通过display的block或none实现。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="11"></a>
+		<p class="title">11.	$route和$router的区别？</p>
+		<p class="detail">答：<br/>
+		$route是”路由信息对象”,包括path,params,hash,query,fullPath,matched,name等路由信息参数。而$router是”路由实例”(VueRouter)对象，包括了路由的跳转方法，钩子函数等(比如：想要导航到不同URL，则使用$router.push方法)。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="12"></a>
+		<p class="title">12.	解释单向数据流和双向数据绑定？</p>
+		<p class="detail">答：<br/>
+		单向数据流： 顾名思义，数据流是单向的。数据流动方向可以跟踪，流动单一，追查问题的时候可以更快捷。缺点就是写起来不太方便。要使 UI 发生变更就必须创建各种 action 来维护对应的 state。<br/>
+		双向数据绑定：数据之间是相通的，将数据变更的操作隐藏在框架内部。优点是在表单交互较多的场景下，会简化大量与业务无关的代码。缺点就是无法追踪局部状态的变化，增加了出错时 debug 的难度。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="13"></a>
+		<p class="title">13.	Vue如何去除URL中的#？</p>
+		<p class="detail">答：<br/>
+		vue-router 默认使用 hash 模式，所以在路由加载的时候，项目中的 URL 会自带 “#”。如果不想使用 “#”， 可以使用 vue-router 的另一种模式 history：
+		</p>
+		<img src="./image/6.png"/>
+		<p class="detail">需要注意的是，当我们启用 history 模式的时候，由于我们的项目是一个单页面应用，所以在路由跳转的时候，就会出现访问不到静态资源而出现 “404” 的情况，这时候就需要服务端增加一个覆盖所有情况的候选资源：如果 URL 匹配不到任何静态资源，则应该返回同一个 “index.html” 页面。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="14"></a>
+		<p class="title">14.	对MVC的理解？</p>
+		<p class="detail">答：<br/>
+		View传送指令到Controller;<br/>Controller完成业务逻辑后，要求Model改变状态;<br/>Model将新的数据发送到View,用户得到反馈。
+		</p>
+		<img src="./image/7.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="15"></a>
+		<p class="title">15.	vue-router路由实现？</p>
+		<p class="detail">答：<br/>
+		路由就是用来跟后端服务器进行交互的一种方式，通过不同的路径，来请求不同的资源，请求不同的页面是路由的其中一种功能。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="16"></a>
+		<p class="title">16.	NextTick是做什么的？</p>
+		<p class="detail">答：<br/>
+		$nextTick 是在下次 DOM 更新循环结束之后执行延迟回调，在修改数据之后使用 $nextTick，则可以在回调中获取更新后的 DOM。<br/>
+		具体可参考官方文档：深入响应式原理(https://cn.vuejs.org/v2/guide/reactivity.html)。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="17"></a>
+		<p class="title">17.	Vue组件data为什么必须是函数？</p>
+		<p class="detail">答：<br/>
+		因为 JS 本身的特性带来的，如果 data 是一个对象，那么由于对象本身属于引用类型，当我们修改其中的一个属性时，会影响到所有 Vue 实例的数据。如果将 data 作为一个函数返回一个对象，那么每一个实例的 data 属性都是独立的，不会相互影响了。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+		
+	<a id="18"></a>
+		<p class="title">18.	计算属性computed和事件methods有什么区别？</p>
+		<p class="detail">答：<br/>
+		我们可以将同一函数定义为一个 method 或者一个计算属性。对于最终的结果，两种方式是相同的。不同点：computed:计算属性是基于它们的依赖进行缓存的，只有在它的相关依赖发生改变时才会重新求值。method:只要发生重新渲染， method 调用总会执行该函数。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="19"></a>
+		<p class="title">19.	对比jQuery,Vue有什么不同？</p>
+		<p class="detail">答：<br/>
+		jQuery 专注视图层，通过操作 DOM 去实现页面的一些逻辑渲染；Vue 专注于数据层，通过数据的双向绑定，最终表现在 DOM 层面，减少了 DOM 操作。<br/>
+		Vue 使用了组件化思想，使得项目子集职责清晰，提高了开发效率，方便重复利用，便于协同开发。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="20"></a>
+		<p class="title">20.	Vue中怎么自定义指令？</p>
+		<p class="detail">答：<br/>全局注册:</p>
+		<img src="./image/8.png"/>
+		<p class="detail">局部注册:</p>
+		<img src="./image/9.png"/>
+		<p class="detail">参考官方文档：自定义指令(https://cn.vuejs.org/v2/guide/custom-directive.html)。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="21"></a>
+		<p class="title">21.	Vue中怎么自定义过滤器？</p>
+		<p class="detail">答：<br/>
+		可以用全局方法 Vue.filter() 注册一个自定义过滤器，它接收两个参数：过滤器 ID 和过滤器函数。过滤器函数以值为参数，返回转换后的值。
+		</p>
+		<img src="./image/10.png"/>
+		<p class="detail">过滤器也同样接受全局注册和局部注册。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="22"></a>
+		<p class="title">22.	对keep-alive的了解？</p>
+		<p class="detail">答：<br/>
+		keep-alive是Vue内置的一个组件，可以使被包含的组件保留状态，或避免重新渲染。
+		</p>
+		<img src="./image/11.png"/>
+		<p class="detail">可以使用 API 提供的 props，实现组件的动态缓存。具体参考官方API(https://cn.vuejs.org/v2/api/#keep-alive)。</p>
+	<a href="#catalogue" class="back">返回</a>
+		
+	<a id="23"></a>
+		<p class="title">23.	Vue中key的作用？</p>
+		<p class="detail">答：<br/>
+		key 的特殊属性主要用在 Vue 的虚拟 DOM 算法，在新旧 nodes 对比时辨识 VNodes。如果不使用 key，Vue 会使用一种最大限度减少动态元素并且尽可能的尝试修复/再利用相同类型元素的算法。使用 key，它会基于 key 的变化重新排列元素顺序，并且会移除 key 不存在的元素。<br/>
+		有相同父元素的子元素必须有独特的 key。重复的 key 会造成渲染错误。<br/>
+		具体参考官方API(https://cn.vuejs.org/v2/api/#key)。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+		
+	<a id="24"></a>
+		<p class="title">24.	Vue的核心是什么？</p>
+		<p class="detail">答：<br/>
+		数据驱动、组件系统。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+	
+	<a id="25"></a>
+		<p class="title">25.	单页面应用的优缺点？</p>
+		<p class="detail">答：<br/>
+		优点：良好的交互体验，良好的前后端工作分离模式，减轻服务器压力。<br/>缺点：SEO难度较高，前进、后退管理，初次加载耗时多。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="26"></a>
+		<p class="title">26.	vue-router 使用params与query传参有什么区别？</p>
+		<p class="detail">答：<br/>
+		vue-router 可以通过 params 与 query 进行传参。
+		</p>
+		<img src="./image/12.png"/>
+		<p class="detail">params 是路由的一部分,必须要有。query 是拼接在 url 后面的参数，没有也没关系；params 不设置的时候，刷新页面或者返回参数会丢，query 则不会有这个问题。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="27"></a>
+		<p class="title">27.	Vue有哪些指令？</p>
+		<p class="detail">答：<br/>
+		v-bind、v-for、v-if、v-show、v-on、v-html、v-text、v-cloak、v-pre、v-once、v-model等。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="28"></a>
+		<p class="title">28.	简述Vue的响应式原理？</p>
+		<p class="detail">答：<br/>
+		当一个Vue实例创建时，vue会遍历data选项的属性，用 Object.defineProperty将它们转为getter/setter并且在内部追踪相关依赖，在属性被访问和修改时通知变化。 <br/>
+		每个组件实例都有相应的watcher程序实例，它会在组件渲染的过程中把属性记录为依赖，之后当依赖项的setter被调用时，会通知watcher重新计算，从而致使它关联的组件得以更新。
+		</p>
+		<img src="image/13.png"/></br>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="29"></a>
+		<p class="title">29.	Vue中如何在组件内部实现一个双向数据绑定？</p>
+		<p class="detail">答：<br/>
+		假设有一个输入框组件，用户输入时，同步父组件页面中的数据。<br/>具体思路：父组件通过props传值给子组件，子组件通过 $emit 来通知父组件修改相应的props值，具体实现如下：
+		</p>
+		<img src="./image/14.png"/>
+		<p class="detail">可以看到，当输入数据时，父子组件中的数据是同步改变的：</p>
+		<img src="./image/15.png"/>
+		<p class="detail">我们在父组件中做了两件事，一是给子组件传入props，二是监听input事件并同步自己的value属性。那么这两步操作能否再精简一下呢？答案是可以的，你只需要修改父组件：</p>
+		<img src="./image/16.png"/>
+		<p class="detail">v-model 实际上会帮我们完成上面的两步操作。</p>
+	<a href="#catalogue" class="back">返回</a>
+		
+	<a id="30"></a>
+		<p class="title">30.	Vue中如何监控某个属性值的变化？</p>
+		<p class="detail">答：<br/>
+		比如现在需要监控data中， obj.a 的变化。Vue中监控对象属性的变化你可以这样：
+		</p>
+		<img src="./image/17.png"/>
+		<p class="detail">deep属性表示深层遍历，但是这么写会监控obj的所有属性变化，并不是我们想要的效果，所以做点修改：</p>
+		<img src="./image/18.png"/>
+		<p class="detail">还有一种方法，可以通过computed 来实现，只需要：</p>
+		<img src="./image/19.png"/>
+		<p class="detail">利用计算属性的特性来实现，当依赖改变时，便会重新计算一个新值。</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="31"></a>
+		<p class="title">31.	Vue中给data中的对象属性添加一个新的属性时会发生什么，如何解决？</p>
+		<p class="detail">示例：<br/></p>
+		<img src="./image/20.png"/>
+		<p class="detail">点击button会发现，obj.b已经成功添加，但是视图并未刷新：</p>
+		<img src="./image/21.png"/>
+		<p class="detail">原因在于在Vue实例创建时， obj.b 并未声明，因此就没有被Vue转换为响应式的属性，自然就不会触发视图的更新，这时就需要使用Vue的全局api—— $set()：</p>
+		<img src="./image/22.png"/>
+		<p class="detail">$set() 方法相当于手动的去把 obj.b 处理成一个响应式的属性，此时视图也会跟着改变了：</p>
+		<img src="./image/23.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="32"></a>
+		<p class="title">32.	delete和Vue.delete删除数组的区别？</p>
+		<p class="detail">答：<br/>
+		delete只是被删除的元素变成了 empty/undefined 其他的元素的键值还是不变。<br/>Vue.delete 直接删除了数组 改变了数组的键值。
+		</p>
+		<img src="./image/24.png"/><br/>
+		<img src="./image/25.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="33"></a>
+		<p class="title">33.	如何优化SPA应用的首屏加载速度慢的问题？</p>
+		<p class="detail">答：<br/>
+		将公用的JS库通过script标签外部引入，减小 app.bundel 的大小，让浏览器并行下载资源文件，提高下载速度；<br/>在配置 路由时，页面和组件使用懒加载的方式引入，进一步缩小 app.bundel 的体积，在调用某个组件时再加载对应的js文件；<br/>加一个首屏loading图，提升用户体验；
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="34"></a>
+		<p class="title">34.	网页从输入网站到渲染完成经历了哪些过程？</p>
+		<p class="detail">答：<br/>
+		大致可以分为如下7步：<br/>1、浏览器的地址栏输入URL并按下回车。<br/>2、浏览器查找当前URL是否存在缓存，并比较缓存是否过期。<br/>3、DNS解析URL对应的IP。<br/>4、根据IP建立TCP连接（三次握手）。<br/>5、HTTP发起请求。<br/>6、服务器处理请求，浏览器接收HTTP响应。<br/>7、渲染页面，构建DOM树。<br/>8、关闭TCP连接（四次挥手）。
+		</p>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="35"></a>
+		<p class="title">35.	jQuery获取的dom对象和原生的dom对象有何区别？</p>
+		<p class="detail">答：<br/>
+		s原生获取的dom是一个对象，jQuery对象就是一个数组对象，其实就是选择出来的元素的数组集合，所以说他们两者是不同的对象类型不等价。<br/>
+		(1)原生DOM对象转jQuery对象：<br/>
+		</p>
+		<img src="./image/26.png"/><br/>
+		<p class="detail">(2)jQuery对象转原生DOM对象：</p>
+		<img src="./image/27.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+
+	<a id="36"></a>
+		<p class="title">36.	jQuery如何扩展自定义方法？</p>
+		<img src="./image/28.png"/><br/>
+		<p class="detail">使用：</p>
+		<img src="./image/29.png"/><br/>
+	<a href="#catalogue" class="back">返回</a>
+ </body>
+</html>

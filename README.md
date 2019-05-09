@@ -2,7 +2,7 @@
 
 
 <a href="#1">前端面试知识点目录整理</a>  
-<a href="#2">一名合格前端工程师的自检清单</a>
+<a href="#2">一名合格前端工程师的自检清单</a>  
 <a href="#3">Other</a>
 
 
@@ -801,7 +801,7 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
 [傳送門](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556338&idx=1&sn=589976a52b9162ec8d7a9a165cbfac7d&chksm=80255e33b752d7257f4ed1e36560a496c097c77b5ac922adc0f11a7b2c86b7654ba77e1a255a&mpshare=1&scene=1&srcid=0508mNKM4Hy94kZGwq6IjfsR&pass_ticket=YNUF1X84t4HG4DWTW3CfBtvCWazRU89AmjCKPZARR5wMyeHrksl%2FKXnK3EAocUgq#rd)   
 
 
-<a name="3">Other</a>
+## <a name="3">Other</a>
 - 1.移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
 - 2.webpack常用的加载器loader[传送门](https://www.jianshu.com/p/74131432191e)  
 - 3.Linux命令行[传送门](http://man.linuxde.net/xinshoumingling)  
