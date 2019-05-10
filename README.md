@@ -805,3 +805,5 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
 - 1.移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
 - 2.webpack常用的加载器loader[传送门](https://www.jianshu.com/p/74131432191e)  
 - 3.Linux命令行[传送门](http://man.linuxde.net/xinshoumingling)  
+- 4.MVX模式+Vue与(Angular+React)区别及其优劣概述[传送门](https://www.cnblogs.com/wulinzi/p/8351300.html)  
+- 5.热更新[传送门](http://www.cnblogs.com/sese/p/9870082.html)  
