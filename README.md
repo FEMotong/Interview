@@ -2,9 +2,13 @@
 
 - [前端面试知识点目录整理](#summary-one)
 - [一名合格前端工程师的自检清单](#summary-two)
-- [前端面试常用理论知识](https://blog.csdn.net/qq_36623058/article/details/81637671)
+- 前端面试常用理论知识[传送门](https://blog.csdn.net/qq_36623058/article/details/81637671)
 - [摘要](#summary)
   - [单页面与多页面区别](#single-multiple-page-differences)
+  - 移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
+  - 移动端适配[传送门](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556417&idx=1&sn=126a16a451ae3a9f6b7a89f2b4bfed63&chksm=80255d80b752d49622b2ab3d2c16ef966c6999f38c1a2e6324a755a0886ab66c05fa8e278138&mpshare=1&scene=1&srcid=&pass_ticket=vicnQJnTr5AXrRkiaN7V4wK6TQVq6jzSeam5lbou6ylxnTNZFxBF13Y8noXhhE3e#rd)
+  - webpack常用loader[传送门](https://www.jianshu.com/p/74131432191e)  
+  - 热更新[传送门](http://www.cnblogs.com/sese/p/9870082.html) 
 
 >
 
@@ -725,6 +729,4 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
   - 在URL中采用#号来作为当前视图的地址,改变#号后的参数，页面并不会重载。
   - 图示  
     <img src="./images/single-multiple-page-differences.png">
-- 移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
-- webpack常用loader[传送门](https://www.jianshu.com/p/74131432191e)  
-- 热更新[传送门](http://www.cnblogs.com/sese/p/9870082.html)  
+ 
