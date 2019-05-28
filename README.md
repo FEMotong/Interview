@@ -741,5 +741,11 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
   - 不同点：React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM。 
 ## Front-and-rear-separation
 - 图示:  
-  <img src="./images/Front-and-rear-separation.png">  
+  <img src="./images/Front-and-rear-separation.png"> 
   前后端分离详解[传送门](https://2014.jsconfchina.com/slides/herman-taobaoweb/index.html#/69)
+- 前端职能
+  - 渲染逻辑(离不开用AJAX与NodeJS数据交互)
+  - 流畅体验(性能优化,浏览器兼容...)
+- 后端职能
+  - 接口文档(接口API)
+  - 与数据库交互
