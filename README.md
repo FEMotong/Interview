@@ -5,6 +5,7 @@
 - 前端面试常用理论知识[传送门](https://blog.csdn.net/qq_36623058/article/details/81637671)
 - [摘要](#summary)
   - [单页面与多页面区别](#single-multiple-page-differences)
+  - [Vue与angular和react的区别](#vue-react-angular)
   - 移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
   - 移动端适配[传送门](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556417&idx=1&sn=126a16a451ae3a9f6b7a89f2b4bfed63&chksm=80255d80b752d49622b2ab3d2c16ef966c6999f38c1a2e6324a755a0886ab66c05fa8e278138&mpshare=1&scene=1&srcid=&pass_ticket=vicnQJnTr5AXrRkiaN7V4wK6TQVq6jzSeam5lbou6ylxnTNZFxBF13Y8noXhhE3e#rd)
   - webpack的loader[传送门](https://www.jianshu.com/p/74131432191e)  
@@ -730,4 +731,10 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
   - 在URL中采用#号来作为当前视图的地址,改变#号后的参数，页面并不会重载。
   - 图示  
     <img src="./images/single-multiple-page-differences.png">
- 
+## vue-react-angular
+- 1、与AngularJS的区别  
+  - 相同点：都支持指令：内置指令和自定义指令；都支持过滤器：内置过滤器和自定义过滤器；都支持双向数据绑定；都不支持低端浏览器。
+  - 不同点：AngularJS的学习成本高，比如增加了Dependency Injection特性，而Vue.js本身提供的API都比较简单、直观；在性能上，AngularJS依赖对数据做脏检查，所以Watcher越多越慢；Vue.js使用基于依赖追踪的观察并且使用异步队列更新，所有的数据都是独立触发的。
+- 2、与React的区别  
+  - 相同点：React采用特殊的JSX语法，Vue.js在组件开发中也推崇编写.vue特殊文件格式，对文件内容都有一些约定，两者都需要编译后使用；中心思想相同：一切都是组件，组件实例之间可以嵌套；都提供合理的钩子函数，可以让开发者定制化地去处理需求；都不内置列数AJAX，Route等功能到核心包，而是以插件的方式加载；在组件开发中都支持mixins的特性。
+  - 不同点：React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM。 
