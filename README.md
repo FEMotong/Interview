@@ -10,7 +10,9 @@
   - 移动端适配[传送门](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556417&idx=1&sn=126a16a451ae3a9f6b7a89f2b4bfed63&chksm=80255d80b752d49622b2ab3d2c16ef966c6999f38c1a2e6324a755a0886ab66c05fa8e278138&mpshare=1&scene=1&srcid=&pass_ticket=vicnQJnTr5AXrRkiaN7V4wK6TQVq6jzSeam5lbou6ylxnTNZFxBF13Y8noXhhE3e#rd)
   - webpack的loader[传送门](https://www.jianshu.com/p/74131432191e)  
   - 热更新[传送门](http://www.cnblogs.com/sese/p/9870082.html) 
-  - 浏览器兼容性问题[传送门](https://blog.csdn.net/weixin_38536027/article/details/79375411)
+  - 浏览器兼容性问题[传送门]  (https://blog.csdn.net/weixin_38536027/article/details/79375411)
+    - [CSS](#compatibleCSS)
+    - [JavaScript](#compatibleJavaScript)
   - [前后端分离](#Front-and-rear-separation)
 
 >
@@ -739,13 +741,17 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
 - 2、与React的区别  
   - 相同点：React采用特殊的JSX语法，Vue.js在组件开发中也推崇编写.vue特殊文件格式，对文件内容都有一些约定，两者都需要编译后使用；中心思想相同：一切都是组件，组件实例之间可以嵌套；都提供合理的钩子函数，可以让开发者定制化地去处理需求；都不内置列数AJAX，Route等功能到核心包，而是以插件的方式加载；在组件开发中都支持mixins的特性。
   - 不同点：React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM。 
+## compatibleCSS
+## compatibleJavaScript
 ## Front-and-rear-separation
 - 图示:  
   <img src="./images/Front-and-rear-separation.png"> 
   前后端分离详解[传送门](https://2014.jsconfchina.com/slides/herman-taobaoweb/index.html#/69)
 - 前端职能
   - 渲染逻辑(离不开用AJAX与NodeJS数据交互)
-  - 流畅体验(性能优化,浏览器兼容...)
+  - 流畅体验(性能优化,浏览器兼容...
+  )
 - 后端职能
   - 接口文档(接口API)
   - 与数据库交互
+- 功能组件化,代码模块化,接口服务化.
