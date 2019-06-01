@@ -115,8 +115,8 @@
 - 2.vuex：状态管理、数据仓库store  
   - 1.state、getters、mutations、actions、modules。
   - 2.辅助函数mapState等，仓库中计算属性的映射、方便操作。
-  - 3.记住在store.js和组件中使用方式。
-
+  - 3.记住在store.js插件和组件中使用方式[传送门](https://blog.csdn.net/xfcy514728/article/details/80278048)
+    - 存储数据到本地浏览器
 ### 十一.VUE深入、源码阅读
 - 1.数据响应式原理。
 - 2.virtual dom。
