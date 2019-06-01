@@ -14,6 +14,7 @@
     - [CSS](#compatibleCSS)
     - [JavaScript](#compatibleJavaScript)
   - [前后端分离](#Front-and-rear-separation)
+  - [web调试技巧](#debug)
 
 >
 
@@ -25,14 +26,14 @@
 - 3.h5中新增的API、修改的API、废弃的API稍作了解（离线存储(Storage)、audio、video）。
 ### 二、关于CSS
 - 1.CSS选择器（三大特性）。  
-`继承性 优先级 层叠性`  
+  `继承性 优先级 层叠性`  
 - 2.BFC机制。
 - 3.盒模型。
 - 4.CSS模块化开发（封装）；SCSS和LESS的使用。
 - 5.屏幕适配以及页面自适应。  
-`meta  rem+js  @media  %`  
+  `meta  rem+js  @media  %`  
 - 6.CSS3中新增的选择器。  
-`属性  结构伪类  状态伪类  其他`  
+  `属性  结构伪类  状态伪类  其他`  
 - 7.CSS3中新增的属性，transform、trasition、animation等。  
 ### 三、关于布局
 - 1.标准文档流（padding + margin + 负margin）+ 浮动float + 定位 left + right + top + bottom。
@@ -758,3 +759,13 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
   - 接口文档(接口API)
   - 与数据库交互
 - 功能组件化,代码模块化,接口服务化.
+
+## debug
+- 查看控制台报错日志
+- 查看网络日志Network
+  - 请求URL和参数是否正确
+    - 若对仍报错,后端出错
+    - 若不对报错,前端出错
+  - 查看响应状态码
+    - 404(客户端错误)
+    - 500(服务端错误)
