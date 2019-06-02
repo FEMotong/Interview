@@ -15,6 +15,7 @@
     - [JavaScript](#compatibleJavaScript)
   - [前后端分离](#Front-and-rear-separation)
   - [web调试技巧](#debug)
+  - 性能优化（雅虎军规）
 
 >
 
