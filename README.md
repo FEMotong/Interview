@@ -239,7 +239,7 @@
 
 - 3.解JavaScript的执行上下文栈，可以应用堆栈信息快速定位问题
 
-- 4.his的原理以及几种不同使用场景的取值
+- 4.this的原理以及几种不同使用场景的取值
 
 - 5.包的实现原理和作用，可以列举几个开发中闭包的实际应用
 
@@ -389,8 +389,16 @@
 
 - 4.手写防抖和节流工具函数、并理解其内部原理和应用场景
 
-- 5.实现一个sleep函数
-
+- 5.实现一个sleep函数   
+  ```
+  async function test() { 
+    console.log('开始啦') 
+    await sleep(3000) 
+    console.log('这是来自3s之后的问好') } 
+    function sleep(ms) { 
+      return new Promise(resolve => setTimeout(resolve, ms)) 
+    }
+  ```
 ## 手动实现前端轮子
 
 - 1.手动实现call、apply、bind
