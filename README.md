@@ -430,9 +430,27 @@
 - 2.手动实现符合Promise/A+规范的Promise、手动实现async await
 
 - 3.手写一个EventEmitter实现事件发布、订阅
-
+  实际操作有点难度.
 - 4.可以说出两种实现双向绑定的方案、可以手动实现
-
+  ```
+  <input type="input" id="input">
+    <span id="show"></span>
+    <script>
+        var obj = {};
+        Object.defineProperty(obj, 'txt', {
+            get: function () {
+                return obj;
+            },
+            set: function (newValue) {
+                document.getElementById('input').value = newValue;
+                document.getElementById('show').innerHTML = newValue;
+            }
+        });
+        document.getElementById('input').addEventListener('keyup', function (e) {
+            obj.txt = e.target.value;
+        });
+    </script>
+    ```
 - 5.手写JSON.stringify、JSON.parse
 
 - 6.手写一个模版引擎，并能解释其中原理
@@ -492,7 +510,7 @@
 - 8.浏览器提供的几种存储机制、优缺点、开发中正确的选择
 
 - 9.浏览器跨标签通信
-
+  localStorge,cookie,SharedWorker,WebSocket
 ## 浏览器原理
 
 - 1.各浏览器使用的JavaScript引擎以及它们的异同点、如何在代码中进行区分
