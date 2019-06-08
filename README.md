@@ -16,6 +16,7 @@
   - [前后端分离](#Front-and-rear-separation)
   - [web调试技巧](#debug)
   - 性能优化（雅虎军规）
+  - 7个有用的Vue开发技巧[传送门](#https://mp.weixin.qq.com/s/0mUvrXuwkwol_Pdm1Nfd0A)
 
 >
 
