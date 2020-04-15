@@ -1,27 +1,18 @@
-# Interview
+## Interview
 
-- [前端面试知识点目录整理](#summary-one)
-- [一名合格前端工程师的自检清单](#summary-two)
-- 前端面试常用理论知识[传送门](https://blog.csdn.net/qq_36623058/article/details/81637671)
-- [摘要](#summary)
-  - [单页面与多页面区别](#single-multiple-page-differences)
-  - [Vue与angular和react的区别](#vue-react-angular)
-  - 移动端开发注意事项[传送门](https://www.jianshu.com/p/b1b67470d999)  
-  - 移动端适配[传送门](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556417&idx=1&sn=126a16a451ae3a9f6b7a89f2b4bfed63&chksm=80255d80b752d49622b2ab3d2c16ef966c6999f38c1a2e6324a755a0886ab66c05fa8e278138&mpshare=1&scene=1&srcid=&pass_ticket=vicnQJnTr5AXrRkiaN7V4wK6TQVq6jzSeam5lbou6ylxnTNZFxBF13Y8noXhhE3e#rd)
-  - webpack的loader[传送门](https://www.jianshu.com/p/74131432191e)  
-  - 热更新[传送门](http://www.cnblogs.com/sese/p/9870082.html) 
-  - 浏览器兼容性问题[传送门](https://blog.csdn.net/weixin_38536027/article/details/79375411)
-    - [CSS](#compatibleCSS)
-    - [JavaScript](#compatibleJavaScript)
-  - [前后端分离](#Front-and-rear-separation)
-  - [web调试技巧](#debug)
-  - 性能优化（雅虎军规）
-  - 7个有用的Vue开发技巧[传送门](#https://mp.weixin.qq.com/s/0mUvrXuwkwol_Pdm1Nfd0A)
+- [前端面试知识点目录整理](#前端面试知识点目录整理)
+- [前端工程师的自检清单](#前端工程师的自检清单)
+- [前端基础拾遗90问](https://juejin.im/post/5e8b261ae51d4546c0382ab4#heading-81)
+- [雅虎前端优化的35条军规](https://www.cnblogs.com/xianyulaodi/p/5755079.html)
+- [摘要](#摘要)
 
->
 
-# summary-one
+> 面试题总结
+
+## <a id="前端面试知识点目录整理">前端面试知识点目录整理</a>
+
 ## 基本功考察
+
 ### 一、关于Html
 - 1.html语义化标签的理解、结构化的理解；能否写出简洁的html结构；SEO优化。
 - 2.h5中新增的属性，如自定义属性data、类名className等；新增表单元素；拖拽Drag。
@@ -185,9 +176,10 @@
   - 1.Linux命令行操作、系统文件管理。
   - 2.多任务、多线程、多进程、协程、并发、并行、串行、同步、异步等概念的理解。   
 
-[傳送門](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556126&idx=1&sn=fac147626d1a63ba67b89ec1a52809d5&chksm=80255edfb752d7c9115039e10341efa70ee633e635ed852d82e13c3203144bc14976932cdde6&mpshare=1&scene=1&srcid=0508hffYrcoV5kKC1VUNx9x0&pass_ticket=YNUF1X84t4HG4DWTW3CfBtvCWazRU89AmjCKPZARR5wMyeHrksl%2FKXnK3EAocUgq#rd)  
+[前端面试知识点目录整理](https://segmentfault.com/a/1190000018603454)  
 
-## summary-two  
+## <a id="前端工程师的自检清单">前端工程师的自检清单</a>
+
 - 开篇  
   实际上，除了坚持学习的强大的自驱力，你还需要一个很简单的学习方法。那就是：建立自己的知识体系。它能帮助你更系统性的学习，同时你也时刻能知道自己哪些地方是不足的。
   我会把我工作和学习中接触到的知识全部归纳到我的知识体系中，其中不仅仅包括我已经学过的，还有很多我没有来得及学习的。
@@ -196,7 +188,7 @@
 
 ## JavaScript基础
 
-变量和类型
+#### 变量和类型
 
 - 1.JavaScript规定了几种语言类型
 
@@ -218,7 +210,7 @@
 
 - 10.出现小数精度丢失的原因，JavaScript可以存储的最大数字、最大安全数字，JavaScript处理大数字的方法、避免精度丢失的方法
 
-## 原型和原型链
+#### 原型和原型链
 
 - 1.理解原型设计模式以及JavaScript中的原型规则
 
@@ -232,7 +224,7 @@
 
 - 7.理解es6 class构造以及继承的底层实现原理
 
-## 作用域和闭包
+#### 作用域和闭包
 
 - 1.解词法作用域和动态作用域
 
@@ -250,7 +242,7 @@
 
 - 8.解模块化解决的实际问题，可列举几个模块化方案并理解其中原理
 
-## 执行机制
+#### 执行机制
 
 - 1.为何try里面放return，finally还会执行，理解其内部机制
 
@@ -266,7 +258,7 @@
 
 - 7.如何在保证页面运行流畅的情况下处理海量数据
 
-## 语法和API
+#### 语法和API
 
 - 1.理解ECMAScript和JavaScript的关系
 - 2.熟练运用es5、es6提供的语法规范，
@@ -277,7 +269,7 @@
 - 6.JavaScript提供的正则表达式API、可以使用正则表达式（邮箱校验、URL解析、去重等）解决常见问题
 - 7.JavaScript异常处理的方式，统一的异常处理方案
 
-## HTML
+#### HTML
 
 - 1.从规范的角度理解HTML，从分类和语义的角度使用标签
 
@@ -289,7 +281,7 @@
 
 - 5.可以使用Canvas API、SVG等绘制高性能的动画
 
-## CSS
+#### CSS
 
 - 1.CSS盒模型，在不同浏览器的差异
 
@@ -512,6 +504,7 @@
 
 - 9.浏览器跨标签通信
   localStorge,cookie,SharedWorker,WebSocket
+  
 ## 浏览器原理
 
 - 1.各浏览器使用的JavaScript引擎以及它们的异同点、如何在代码中进行区分
@@ -781,46 +774,171 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
 
 - 6.掌握在繁重的工作和长期的电脑辐射的情况下保持健康的方法，建立正确的养生知识体系  
 
-[传送门](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556338&idx=1&sn=589976a52b9162ec8d7a9a165cbfac7d&chksm=80255e33b752d7257f4ed1e36560a496c097c77b5ac922adc0f11a7b2c86b7654ba77e1a255a&mpshare=1&scene=1&srcid=0508mNKM4Hy94kZGwq6IjfsR&pass_ticket=YNUF1X84t4HG4DWTW3CfBtvCWazRU89AmjCKPZARR5wMyeHrksl%2FKXnK3EAocUgq#rd)   
+[前端工程师的自检清单](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556338&idx=1&sn=589976a52b9162ec8d7a9a165cbfac7d&chksm=80255e33b752d7257f4ed1e36560a496c097c77b5ac922adc0f11a7b2c86b7654ba77e1a255a&mpshare=1&scene=1&srcid=0508mNKM4Hy94kZGwq6IjfsR&pass_ticket=YNUF1X84t4HG4DWTW3CfBtvCWazRU89AmjCKPZARR5wMyeHrksl%2FKXnK3EAocUgq#rd)
 
+## <a id="摘要">摘要</a>
 
-# summary
-## single-multiple-page-differences
-- 单页面与多页面的区别  
-  - 分离前后端关注点，前端负责界面显示，后端负责数据存储和计算，各司其职，不会把前后端的逻辑混杂在一起；
-  - 减轻服务器压力，服务器只用出数据就可以，不用管展示逻辑和页面合成，吞吐能力会提高几倍；
-  - 同一套后端程序代码，不用修改就可以用于Web界面、手机、平板等多种客户端；
-  - 在URL中采用#号来作为当前视图的地址,改变#号后的参数，页面并不会重载。
-  - 图示  
-    <img src="./images/single-multiple-page-differences.png">
-## vue-react-angular
-- 1、与AngularJS的区别  
-  - 相同点：都支持指令：内置指令和自定义指令；都支持过滤器：内置过滤器和自定义过滤器；都支持双向数据绑定；都不支持低端浏览器。
-  - 不同点：AngularJS的学习成本高，比如增加了Dependency Injection特性，而Vue.js本身提供的API都比较简单、直观；在性能上，AngularJS依赖对数据做脏检查，所以Watcher越多越慢；Vue.js使用基于依赖追踪的观察并且使用异步队列更新，所有的数据都是独立触发的。
-- 2、与React的区别  
-  - 相同点：React采用特殊的JSX语法，Vue.js在组件开发中也推崇编写.vue特殊文件格式，对文件内容都有一些约定，两者都需要编译后使用；中心思想相同：一切都是组件，组件实例之间可以嵌套；都提供合理的钩子函数，可以让开发者定制化地去处理需求；都不内置列数AJAX，Route等功能到核心包，而是以插件的方式加载；在组件开发中都支持mixins的特性。
-  - 不同点：React采用的Virtual DOM会对渲染出来的结果做脏检查；Vue.js在模板中提供了指令，过滤器等，可以非常方便，快捷地操作Virtual DOM。 
-## compatibleCSS
-## compatibleJavaScript
-## Front-and-rear-separation
-- 图示:  
-  <img src="./images/Front-and-rear-separation.png"> 
-  前后端分离详解[传送门](https://2014.jsconfchina.com/slides/herman-taobaoweb/index.html#/69)
-- 前端职能
-  - 渲染逻辑(离不开用AJAX与NodeJS数据交互)
-  - 流畅体验(性能优化,浏览器兼容...
-  )
-- 后端职能
-  - 接口文档(接口API)
-  - 与数据库交互
-- 功能组件化,代码模块化,接口服务化.
+#### 函数节流
 
-## debug
-- 查看控制台报错日志
-- 查看网络日志Network
-  - 请求URL和参数是否正确
-    - 若对仍报错,后端出错
-    - 若不对报错,前端出错
-  - 查看响应状态码
-    - 404(客户端错误)
-    - 500(服务端错误)
+```javascript
+/*触发第一次有效，间隔时间外才能触发第二次...*/
+/*指定时间内执行一次代码*/
+
+function debounce(fn, delay) {
+  let timer = null
+     return function (timer) {
+         timer = setTimerout(() => {
+             fn.call(this)
+             clearTimeout(timer)
+             timer = null
+         }, delay)
+     }
+}
+```
+
+#### 函数防抖
+
+```javascript
+/*频繁触发,仅执行最后一次出现的事件函数*/
+
+function debounce(fn, delay) {
+  let timer = null
+  return function (timer) {
+    clearTimeout(timer)  // 每次点击把之前的清除
+    timer = setTimerout(() => {
+       fn.call(this)
+    }, delay) 
+  }
+}
+```
+
+#### 排序算法
+
+- 冒泡排序
+  - 算法描述
+    - 1.比较相邻元素，若第一个大于第二个，交换他们。
+    - 2.重复第一步，最后的数将会最大。
+    - 3.重复以上步骤，除了最后一个数
+    - 4.继续重复以上步骤，直到没有任何一对数需要比较。
+    
+    ```javascript
+    function bubbleSort(arr) {                                          //参数：数组;返回值。
+            var len = arr.length;
+            for (let i = 0; i < len; i++) {
+                for (let j = 0; j < len -1 - i; j++) {
+                    if (arr[j] > arr[j + 1]) {                                 //相邻两个元素比较
+                        let temp = arr[j + 1];                                 //元素交换
+                             arr[j + 1] = arr[j];
+                             arr[j] = temp;
+                    }
+                }
+            }
+            return arr;                                                              //返回排完序数组
+        }
+        console.log(bubbleSort([21,78,15,36,59,11,34,25,13]));      //11,13,15,21,25,34,36,59,78
+    ```
+
+- 快速排序
+    - 算法描述
+      - 1.找基准点。
+      - 2.建立两个空数组。
+      - 3.arr中大于基准点放left,则反之。
+      - 4.left,基准点，right连接起来。
+      
+    ```javascript
+    function quicksort(arr) {                                              //参数类型：数组；返回值，数组。
+            if (arr.length <= 1) {
+                return arr;
+            }
+            var equally = Math.floor(arr.length / 2);                      //arr中间索引
+            var benchmark = arr.splice(equally,1);                         //arr中间值
+            var left = [];
+            var right = [];
+            for (var i = 0,len = arr.length; i < len; i++) {
+                if (arr[i] < benchmark) {
+                    left.push(arr[i]);
+                } else {
+                    right.push(arr[i]);
+                }
+            }
+            return quicksort(left).concat([benchmark],quicksort(right));    //不断递归，最后都递归为一个数，然后拼接数组，返回排完序数组。
+        }
+        console.log(quicksort([21,81,12,85,31,97,18,2,87,75,3]));      //output:2,3,12,18,21,31,75,81,85,87,97
+    ```
+
+- 选择排序
+  - 算法描述
+    - 1.与第一个数比较，如果大于它，则交换位置
+    - 2.重复第一步，一遍循环，第一个数是最小值；
+    - 3.重复n-1次循环，OK。
+    
+    ```javascript
+     function selectSort(arr) {                                     //参数：数组；返回值：数组。
+            var len = arr.length;
+            var temp;
+            for (var i = 0; i < len - 1; i++) {
+                for (var j = j + 1; j < len; j++) {
+                    if (arr[j] < arr[i]) {                               //与第一个数比较
+                        temp = arr[j];                                  //交换位置
+                        arr[j] = arr[i];
+                        arr[i] = temp;                                     
+                    }
+                }
+            }
+            return arr;                                                   //返回数组
+        }
+        console.log(selectSort([14,52,18,78,54,114,65,28,56]));  //14,52,18,78,54,114,65,28,56
+    ```
+
+- 插入排序
+  - 算法描述
+    - 1.第一个数a[0]与第二个数a[1]比较，若a[0] > a[1],则 a[1] = a[0]
+    - 2.关键是第三个数a[2],a[2]先与a[1]，若a[2] < a[1],则交换位置，此时a[1]再与a[0]比较大小。
+    
+    ```javascript
+     function insertSort(arr) {                            //参数：数组；返回值：数组。
+              for (let i = 1,len = arr.length; i < len;i++) {
+                  for (let j = i - 1; j >= 0;j--) {        //j--：若a[2] < a[1],指针退1。
+                      if (arr[j] > arr[j + 1]) {           //比较相邻两数大小
+                          let temp = arr[j + 1];
+                          arr[j + 1] = arr[j];
+                          arr[j] = temp;
+                      }
+                  }
+              }
+              return arr;                                   //返回数组
+          }
+    console.log(insertSort([12,85,42,67,34,56,19,97,47]));  //12,19,34,42,47,56,67,85,97
+    ```
+
+- 归并排序
+  - 算法描述
+    - 1.把arr分成left,right子序列;
+    - 2.比较left,right大小，返回排完序数组，递归两次；
+    - 3.递归与栈相关，弹出并返回的值执行其他动作。
+    
+    ```javascript
+    function mergeSort(arr) {                                  //参数类型：数组；返回：数组。
+            if (arr.length < 2) {
+                return arr;
+            }
+    
+            const middle = Math.floor(arr.length / 2);         //中间值
+            const left = arr.slice(0,middle);                  //left[]
+            const right = arr.slice(middle);                   //right[]  
+            return merge(mergeSort(left),mergeSort(right));    //递归两次
+        }
+    
+        function merge(left,right) {
+            var newArr = [];
+            while (left.length && right.length) {              
+                if (left[0] < right[0]) {                       //子序列比较大小
+                    newArr.push(left.shift());
+                } else {
+                    newArr.push(right.shift());
+                }
+            }
+            return newArr.concat(left,right);                    //返回合并好的了子序列
+        }
+        console.log(mergeSort([54,24,15,95,75,35,68,78,12,31,108]));   //12,15,24,31,35,54,68,75,78,95,108
+    ```
