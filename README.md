@@ -1,4 +1,4 @@
-## Interview
+## Interview <img src="https://img.shields.io/badge/license-MIT-brightgreen" alt="license">
 
 - [前端面试知识点目录整理](#前端面试知识点目录整理)
 - [前端工程师的自检清单](#前端工程师的自检清单)
@@ -6,6 +6,8 @@
 - [雅虎前端优化的35条军规](https://www.cnblogs.com/xianyulaodi/p/5755079.html)
 - [100道+ JavaScript 面试题](https://github.com/Wscats/articles)
 - [摘要](#摘要)
+- [书籍](#书籍)
+- [其他](#其他)
 
 
 > 面试题总结
@@ -943,3 +945,14 @@ function debounce(fn, delay) {
         }
         console.log(mergeSort([54,24,15,95,75,35,68,78,12,31,108]));   //12,15,24,31,35,54,68,75,78,95,108
     ```
+
+## 书籍
+
+- [ECMAScript 6 入门](http://es6.ruanyifeng.com/)（阮一峰）
+- [JS-design-pattern](https://github.com/hzlu/JS-design-pattern)（曾探大牛的设计模式）
+- [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)（老外的设计模式）
+- [Speaking JavaScript](http://speakingjs.com/)（JS知识点超详细）  
+
+## 其他
+
+ - [一个实用的图表配置](https://gallery.echartsjs.com)
