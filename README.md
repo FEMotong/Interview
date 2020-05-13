@@ -5,6 +5,7 @@
 - [前端基础拾遗90问](https://juejin.im/post/5e8b261ae51d4546c0382ab4#heading-81)
 - [雅虎前端优化的35条军规](https://www.cnblogs.com/xianyulaodi/p/5755079.html)
 - [100道+ JavaScript 面试题](https://github.com/Wscats/articles)
+- [58 道 Vue 常见面试题集锦](https://mp.weixin.qq.com/s/Nn8AqyW9rrFrsfD_PPT-vg)
 - [摘要](#摘要)
 - [书籍](#书籍)
 - [其他](#其他)
