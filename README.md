@@ -6,6 +6,7 @@
 - [雅虎前端优化的35条军规](https://www.cnblogs.com/xianyulaodi/p/5755079.html)
 - [100道+ JavaScript 面试题](https://github.com/Wscats/articles)
 - [58 道 Vue 常见面试题集锦](https://mp.weixin.qq.com/s/Nn8AqyW9rrFrsfD_PPT-vg)
+- [思维导图](#思维导图)
 - [摘要](#摘要)
 - [书籍](#书籍)
 - [其他](#其他)
@@ -779,6 +780,10 @@ vczh大神在知乎问题【如何能以后达到温赵轮三位大神的水平�
 - 6.掌握在繁重的工作和长期的电脑辐射的情况下保持健康的方法，建立正确的养生知识体系  
 
 [前端工程师的自检清单](https://mp.weixin.qq.com/s?__biz=MzAxODE2MjM1MA==&mid=2651556338&idx=1&sn=589976a52b9162ec8d7a9a165cbfac7d&chksm=80255e33b752d7257f4ed1e36560a496c097c77b5ac922adc0f11a7b2c86b7654ba77e1a255a&mpshare=1&scene=1&srcid=0508mNKM4Hy94kZGwq6IjfsR&pass_ticket=YNUF1X84t4HG4DWTW3CfBtvCWazRU89AmjCKPZARR5wMyeHrksl%2FKXnK3EAocUgq#rd)
+
+## <a id="思维导图">思维导图</a>
+
+- ![前端知识思维导图](https://ftp.bmp.ovh/imgs/2020/05/ac1749763a202877.png)
 
 ## <a id="摘要">摘要</a>
 
